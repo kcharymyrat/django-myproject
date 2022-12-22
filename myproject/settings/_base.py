@@ -25,6 +25,7 @@ EXTERNAL_BASE = BASE_DIR / "externals"
 EXTERNAL_LIBS_PATH = EXTERNAL_BASE / "libs"
 EXTERNAL_APPS_PATH = EXTERNAL_BASE / "apps"
 sys.path = ["", EXTERNAL_LIBS_PATH, EXTERNAL_APPS_PATH] + sys.path
+print(sys.path)
 
 with open(BASE_DIR / "secrets.json", "r") as f:
     secrets = json.loads(f.read())
